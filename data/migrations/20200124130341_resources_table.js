@@ -14,9 +14,9 @@ exports.up = function(knex) {
             .unsigned()
             .notNullable()
             .references("id")
-            .inTable("projects")
-            .onDelete("RESTRICT")
-            .onUpdate("CASCADE");
+            .inTable("projects");
+            // .onDelete("RESTRICT")
+            // .onUpdate("CASCADE");
     })
 };
 
